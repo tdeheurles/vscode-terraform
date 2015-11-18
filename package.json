@@ -1,0 +1,25 @@
+{
+	"name": "terraform",
+	"description": "Terraform support",
+	"version": "0.0.1",
+	"publisher": "Robert Roland",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "terraform",
+			"aliases": ["Terraform", "terraform"],
+			"extensions": [".tf",".tfvars"],
+			"configuration": "./terraform.configuration.json"
+		}],
+		"grammars": [{
+			"language": "terraform",
+			"scopeName": "source.terraform",
+			"path": "./syntaxes/terraform.tmLanguage"
+		}]
+	}
+}
